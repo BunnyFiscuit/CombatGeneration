@@ -69,19 +69,19 @@
                   </AnchorPane>
                   <AnchorPane GridPane.rowIndex="1">
                      <children>
-                        <Label fx:id="combatInfo1" alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="14.0" prefHeight="39.0" prefWidth="444.0" text="Combat Details" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="14.0">
+                        <Label fx:id="combatInfo1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="39.0" prefWidth="839.0" text="Combat Info 1" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="14.0">
                            <font>
                               <Font size="31.0" />
                            </font>
                         </Label>
                         <Separator layoutX="299.0" layoutY="106.0" prefHeight="16.0" prefWidth="267.0" />
-                        <Label fx:id="combatInfo2" alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="53.0" prefHeight="25.0" prefWidth="444.0" text="Combat Details">
+                        <Label fx:id="combatInfo2" alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="53.0" prefHeight="25.0" prefWidth="444.0" text="Combat Info 2">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
                         <Separator layoutX="77.0" layoutY="452.0" prefHeight="0.0" prefWidth="713.0" />
-                        <Label fx:id="combatInfo3" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="72.0" prefHeight="29.0" prefWidth="444.0" text="Combat Details">
+                        <Label fx:id="combatInfo3" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="72.0" prefHeight="29.0" prefWidth="444.0" text="Combat Info 3">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -121,7 +121,7 @@
                               <Font size="18.0" />
                            </font>
                         </Label>
-                        <Label fx:id="heroClassLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="36.0" prefHeight="16.0" prefWidth="96.0" text="HeroClass" textAlignment="CENTER" />
+                        <Label fx:id="heroClassLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="36.0" prefHeight="16.0" prefWidth="96.0" text="HeroClass" textAlignment="CENTER" AnchorPane.bottomAnchor="8.0" AnchorPane.topAnchor="34.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane GridPane.rowIndex="1">
@@ -146,23 +146,25 @@
                               <Font size="21.0" />
                            </font>
                         </Label>
-                        <Label fx:id="hpLabel" layoutX="130.0" layoutY="51.0" prefHeight="25.0" prefWidth="67.0" text="HH" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="50.0">
+                        <Label fx:id="heroHPLabel" layoutX="130.0" layoutY="51.0" prefHeight="25.0" prefWidth="67.0" text="HH" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="50.0">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="strengthLabel" layoutX="140.0" layoutY="61.0" prefHeight="25.0" prefWidth="67.0" text="SS" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="80.0">
+                        <Label fx:id="heroStrengthLabel" layoutX="140.0" layoutY="61.0" prefHeight="25.0" prefWidth="67.0" text="SS" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="80.0">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="defenceLabel" layoutX="150.0" layoutY="71.0" prefHeight="25.0" prefWidth="67.0" text="DD" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="110.0">
+                        <Label fx:id="heroDefenceLabel" layoutX="150.0" layoutY="71.0" prefHeight="25.0" prefWidth="67.0" text="DD" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="110.0">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
                         <Button fx:id="healButton" layoutX="66.0" layoutY="273.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="Heal" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="273.0" />
                         <Label fx:id="healLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" layoutY="307.0" prefHeight="16.0" prefWidth="201.0" text="Heal cost XP" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="307.0" />
+                        <Label layoutX="87.0" layoutY="-8.0" text="Level:" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="-5.0" />
+                        <Label fx:id="levelLabel" layoutX="95.0" layoutY="-2.0" text="Label" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="-5.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane GridPane.rowIndex="2">

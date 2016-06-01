@@ -49,18 +49,21 @@ public class ClassSelectorController implements Initializable{
                 switch(heroClass) {
                     case "Soldier":
                         System.out.println(heroName + " picked " + heroClass);
-                        hero = new Character(heroName,8,8,150);
+                        hero = new Character(heroName,60,60,150);
                         hero.setProfession(heroClass);
+                        hero.setXP(0);
                         break;
                     case "Warrior":
                         System.out.println(heroName + " picked " + heroClass);
-                        hero = new Character(heroName,10,6,125);
+                        hero = new Character(heroName,80,50,125);
                         hero.setProfession(heroClass);
+                        hero.setXP(0);
                         break;
                     case "Knight":
                         System.out.println(heroName + " picked " + heroClass);
-                        hero = new Character(heroName,6,10,175);
+                        hero = new Character(heroName,50,80,175);
                         hero.setProfession(heroClass);
+                        hero.setXP(0);
                         break;
                 }
                 runGameAs(hero);
@@ -78,10 +81,11 @@ public class ClassSelectorController implements Initializable{
             newStage.setTitle("Combat Generation");
             newStage.show();
             GameFieldController controller = loader.<GameFieldController>getController();
-            Thread t = new Thread(controller);
+            //Thread t = new Thread(controller);
             controller.setHero(hero);
             controller.setStage(newStage);
             controller.runGame();
+            //t.start();
             primaryStage.hide();
         } catch (IOException e){
             e.printStackTrace();

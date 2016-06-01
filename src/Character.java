@@ -2,6 +2,7 @@
 public class Character implements IStats {
 
     private int str,def,hp, xp, xpMax;
+    private int level = 1;
     private String name;
     private String profession;
 
@@ -10,6 +11,15 @@ public class Character implements IStats {
         this.str = str;
         this.def = def;
         this.hp = hp;
+    }
+
+
+    public int getLevel(){
+        return level;
+    }
+
+    public void setLevel(int level){
+        this.level = level;
     }
 
     public void setProfession(String profession){
@@ -32,7 +42,7 @@ public class Character implements IStats {
         this.xpMax = xpMax;
     }
 
-    public int getXPMAx(){
+    public int getXPMax(){
         return this.xpMax;
     }
 

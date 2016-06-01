@@ -15,13 +15,13 @@ public class Monster implements IStats{
         // Sets stats based on difficulty int.
         switch(difficulty) {
             case 1:
-                setStrength(10);
-                setDefence(5);
+                setStrength(60);
+                setDefence(30);
                 setHitpoints(100);
                 break;
             case 2:
-                setStrength(20);
-                setDefence(15);
+                setStrength(80);
+                setDefence(40);
                 setHitpoints(200);
                 break;
         }
